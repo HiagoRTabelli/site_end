@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="Images/logo-cliente.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaiba Corp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      width: 100%;
+    }
+
+    .box1 {
+      height: 40px;
+      background-color: #0a0f1c; /* escuro */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo {
+  height: 40px;
+  margin-left: 100px;
+}
+.box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #1e1e2f;
+  color: white;
+  height: 50px;
+}
+
+/* Área que contém a logo + texto */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre imagem e texto */
+  }
+
+.logo {
+  height: 40px;
+}
+
+.logo-texto {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Área dos links à direita */
+.menu-links {
+  display: flex;
+  gap: 20px;
+  margin-right: 200px;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.menu-links a:hover {
+  text-decoration: underline;
+}
+
+    .box2 {
+  display: flex;
+  padding: 48px;
+  height: 400px;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* Metade esquerda da .box2 */
+.box2-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 150px;
+}
+
+/* Metade direita com imagem */
+.box2-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+/* Título e subtítulo */
+.titulo {
+  font-size: 46px;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Botão Sign up */
+.signup-btn {
+  width: 100px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  color: #3e8e9d;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Imagem */
+.box2-right img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+   .box3 {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.box3-content {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.box3-title {
+  font-size: 1.8rem;
+  margin-bottom: 36px;
+  color: #333;
+}
+
+/* Container de todas as cartas */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Wrapper de cada carta + fonte */
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+
+/* Estilo da carta clicável */
+.card {
+  width: 100%;
+  height: 260px;
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden; /* Garante que a imagem não ultrapasse a borda */
+  transition: opacity 0.3s ease;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* Texto da fonte fora da carta */
+.fonte {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 6px;
+  text-align: center;
+}
+
+
+ .box4 {
+  background-color: #e5e7eb;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  position: relative;
+}
+/* Container central da citação */
+.quote-container {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+/* Texto da frase */
+.quote-text {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f2937;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Nome do autor no canto inferior direito */
+.quote-author {
+  position: absolute;
+  bottom: -20;
+  right: 10px;
+  font-size: 16px;
+  color: #1f2937;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+       .box6-wrapper {
+      height: 400px;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box6-wrapper {
+  height: 400px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box6 {
+  width: 70%;
+  height: 150px;
+  background-color: #3b82f6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 30px;
+  gap: 20px;
+}
+
+/* Parte da esquerda com os textos */
+.box6-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.box6-titulo {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.box6-subtitulo {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Botão na direita */
+.box6-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reutilizando estilo de botão */
+.signup-btn {
+  width: 100px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.box7 {
+  height: 100px;
+  background-color: #1f2937; /* tom neutro, harmoniza com seu layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.box7-text {
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 300;
+  max-width: 800px;
+}
+
+
+  </style>
+</head>
+<body>
+
+ <div class="box box1">
+  <div class="logo-area">
+    <img src="Images/logo-cliente.png" alt="Logo do Cliente" class="logo">
+    <span class="logo-texto">Kaiba Corp</span>
+  </div>
+  <div class="menu-links">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </div>
+</div>
+  <div class="box box2">
+  <div class="box2-left">
+    <h2 class="titulo">Redefinindo o Conceito de Realidade</h2>
+    <p class="subtitulo">A realidade como você conhece é limitada, obsoleta e patética. A Kaiba Corp oferece um novo mundo onde tecnologia e poder se unem para substituir a ilusão cotidiana por experiências além da compreensão.</p>
+    <button class="signup-btn">Sign up</button>
+  </div>
+  <div class="box2-right">
+    <img src="Images/hologram.png" alt="Imagem de exemplo">
+  </div>
+</div>
+
+ <div class="box box3">
+  <div class="box3-content">
+    <h2 class="box3-title">Confira os Ultimos Lançamentos</h2>
+    <div class="card-container">
+      <div class="card-wrapper">
+        <a href="#" target="_blank" class="card">
+          <img src="Images/Magia.jpg" alt="Imagem 1">
+        </a>
+        <p class="fonte">Dragon Master Magia</p>
+      </div>
+      <div class="card-wrapper">
+        <a href="#" target="_blank" class="card">
+          <img src="Images/SpiritDragon.jpg" alt="Imagem 2">
+        </a>
+        <p class="fonte">Blue-Eyes Ultimate Spirit Dragon</p>
+      </div>
+      <div class="card-wrapper">
+        <a href="#" target="_blank" class="card">
+          <img src="Images/Chaos Max.jpg" alt="Imagem 3">
+        </a>
+        <p class="fonte">Blue-Eyes Chaos MAX Dragon</p>
+      </div>
+      <div class="card-wrapper">
+        <a href="#" target="_blank" class="card">
+          <img src="Images/Indigo.jpg" alt="Imagem 4">
+        </a>
+        <p class="fonte">Indigo-Eyes Silver Dragon</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="box box4">
+  <div class="quote-container">
+    <p class="quote-text">“Por tempo demais fomos forçados a viver apenas nesta realidade. Ela é tediosa, mal projetada e pateticamente construída. Se o responsável por isso trabalhasse para mim, eu já o teria demitido.”</p>
+    <p class="quote-author">– Seto Kaiba</p>
+  </div>
+</div>
+
+<div class="box6-wrapper">
+  <div class="box6">
+    <div class="box6-left">
+      <h2 class="box6-titulo">Junte-se agora mesmo à Batalha da Cidade!</h2>
+      <p class="box6-subtitulo">Só os duelistas mais determinados alcançarão a glória. Prepare seu baralho... e o seu destino.</p>
+    </div>
+    <div class="box6-right">
+      <button class="signup-btn">Sign up</button>
+    </div>
+  </div>
+</div>
+
+<div class="box7">
+  <p class="box7-text">“Copyright © The Odin Project 2025”</p>
+</div>
+
+</body>
+</html>
